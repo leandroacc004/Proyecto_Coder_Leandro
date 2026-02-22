@@ -65,7 +65,7 @@ nav ul li a:hover {
     color: black !important;
 }
 
-.productos-flex-container {
+.productos_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -73,7 +73,7 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.card-juego {
+.card_juego {
     background-color: #1a1a1a;
     border: 1px solid #b388ff;
     padding: 15px;
@@ -84,13 +84,13 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-.card-juego:hover {
+.card_juego:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(179, 136, 255, 0.4);
     border-color: white;
 }
 
-.card-juego img {
+.card_juego img {
     width: 100%;
     height: auto;
     border-radius: 4px;
@@ -159,7 +159,7 @@ fieldset {
     margin-top: 10px;
 }
 
-.footer-container {
+.footer_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
