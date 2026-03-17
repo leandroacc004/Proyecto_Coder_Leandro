@@ -9,7 +9,7 @@
         background-color: $color-tarjetas;
         border: 1px solid $color-principal;
         padding: 20px;
-        width: 280px; // Ancho fijo para las tarjetas
+        width: 280px; 
         text-align: center;
         position: relative;
         border-radius: 10px;
@@ -21,9 +21,9 @@
         }
 
         img {
-            width: $max-img-width; // Usa la variable
-            height: 250px; // Altura fija para que todas se vean iguales
-            object-fit: cover; // Corta la imagen para que encaje sin deformarse
+            width: $max-img-width; 
+            height: 250px;
+            object-fit: cover; 
             border-radius: 5px;
             margin-bottom: 15px;
         }

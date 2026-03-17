@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   background-color: #000000;
   border-bottom: 2px solid #b388ff;
@@ -85,7 +84,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Regla de oro para que ninguna imagen sea más grande que su contenedor */
 img {
   max-width: 100%;
   height: auto;

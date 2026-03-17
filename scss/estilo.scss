@@ -13,10 +13,9 @@ body {
     background-color: $color-negro;
     color: white;
     font-family: $fuente-cuerpo;
-    overflow-x: hidden; // Evita el desborde horizontal
+    overflow-x: hidden; 
 }
 
-/* Regla de oro para que ninguna imagen sea más grande que su contenedor */
 img {
     max-width: 100%;
     height: auto;
@@ -33,7 +32,7 @@ h1, h2 {
     transition: all 0.3s ease;
     
     fieldset {
-        border: none; // Quitamos el borde feo por defecto para usar el de Bootstrap
+        border: none; 
         padding: 10px 0;
         
         legend {
