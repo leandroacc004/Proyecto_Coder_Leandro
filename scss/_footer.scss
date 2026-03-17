@@ -1,0 +1,21 @@
+footer {
+    background-color: $color-negro;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    border-top: 2px solid $color-principal;
+
+    p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    // Estilo básico para listas en el footer si decides agregarlas luego
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            padding: 5px 0;
+        }
+    }
+}

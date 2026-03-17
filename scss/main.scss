@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'header';
+@import 'cards';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-principal;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: $fuente-principal;
+}
