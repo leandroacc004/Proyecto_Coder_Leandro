@@ -1,37 +1,21 @@
-.productos-flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+header {
+    background-color: $color-negro;
+    border-bottom: 2px solid $color-principal;
+    padding: 15px 0;
 
-.card-juego {
-    background-color: $color-tarjetas;
-    border: 1px solid $color-principal;
-    padding: 15px;
-    width: 280px;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    transition: all 0.4s ease; // Transición suave para la pseudoclase
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
 
-    &:hover {
-        transform: translateY(-10px) scale(1.02); // Transformación
-        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-        border-color: white;
+        a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            &:hover {
+                color: $color-principal;
+            }
+        }
     }
-
-    img {
-        border-radius: 5px;
-    }
-}
-
-// Animación de entrada para los títulos (Unidad 8)
-@keyframes aparecer {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-entrada {
-    animation: aparecer 1s ease-out;
 }

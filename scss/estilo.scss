@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'header';
+@import 'cards';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-negro;
+    color: white;
+    font-family: $fuente-cuerpo;
+    overflow-x: hidden; // Evita el desborde horizontal
+}
+
+/* Regla de oro para que ninguna imagen sea más grande que su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2 {
+    color: $color-principal;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.form-flex {
+    transition: all 0.3s ease;
+    
+    fieldset {
+        border: none; // Quitamos el borde feo por defecto para usar el de Bootstrap
+        padding: 10px 0;
+        
+        legend {
+            font-family: $fuente-titulos;
+            color: $color-principal;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+    }
+
+    .form-control, .form-select {
+        background-color: #222;
+        border: 1px solid #444;
+        color: white;
+        
+        &:focus {
+            background-color: #333;
+            border-color: $color-principal;
+            color: white;
+            box-shadow: 0 0 8px rgba(179, 136, 255, 0.5);
+        }
+    }
+
+    label {
+        color: #ccc;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+}

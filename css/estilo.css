@@ -1,179 +1,130 @@
+@charset "UTF-8";
+header {
+  background-color: #000000;
+  border-bottom: 2px solid #b388ff;
+  padding: 15px 0;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+header nav ul a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul a:hover {
+  color: #b388ff;
+}
+
+.productos-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+}
+.productos-flex-container .card-juego {
+  background-color: #1a1a1a;
+  border: 1px solid #b388ff;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+.productos-flex-container .card-juego:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 10px 25px rgba(179, 136, 255, 0.4);
+}
+.productos-flex-container .card-juego img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.productos-flex-container .card-juego h3 {
+  font-size: 1.1rem;
+  color: #b388ff;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #000000;
+  border-top: 2px solid #b388ff;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer p {
+  text-align: center;
+  margin-top: 20px;
+  color: #888;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #b388ff;
+  background-color: #000000;
+  color: white;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
 }
 
-header, main, footer {
-    background-color: black;
+/* Regla de oro para que ninguna imagen sea más grande que su contenedor */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding-bottom: 10px;
-}
-
-h1, header h2 {
-    color: #b388ff;
-    font-size: 30px;
-    text-align: center;
-}
-
-h1, h2, h3, h4, h5, p, form, footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
-
-main section h2 {
-    color: #b388ff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    list-style: none;
-    padding: 10px 0;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    background-color: rgb(150, 18, 150);
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: white;
-    color: rgb(150, 18, 150);
-    transform: scale(1.1);
-}
-
-.activo {
-    background-color: rgb(176, 209, 198) !important;
-    color: black !important;
-}
-
-.productos_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
-.card_juego {
-    background-color: #1a1a1a;
-    border: 1px solid #b388ff;
-    padding: 15px;
-    width: 280px;
-    text-align: center;
-    position: relative;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.card_juego:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(179, 136, 255, 0.4);
-    border-color: white;
-}
-
-.card_juego img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.etiqueta, .etiqueta-badge {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: white;
-    color: red;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 3px;
-    font-size: 12px;
-    z-index: 1;
-}
-
-.card-comentario {
-    background-color: #333;
-    padding: 20px;
-    width: 300px;
-    border-left: 5px solid #b388ff;
-    border-radius: 5px;
-    transition: transform 0.2s;
-}
-
-.card-comentario:hover {
-    transform: scale(1.05);
-}
-
-.main-contacto {
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1, h2 {
+  color: #b388ff;
+  text-align: center;
+  margin: 30px 0;
 }
 
 .form-flex {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 500px;
+  transition: all 0.3s ease;
 }
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    border: 1px solid #b388ff;
-    border-radius: 8px;
+.form-flex fieldset {
+  border: none;
+  padding: 10px 0;
 }
-
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.form-flex fieldset legend {
+  font-family: "Verdana", sans-serif;
+  color: #b388ff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
-
-.btn-group {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+.form-flex .form-control, .form-flex .form-select {
+  background-color: #222;
+  border: 1px solid #444;
+  color: white;
 }
-
-.footer_container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #000;
+.form-flex .form-control:focus, .form-flex .form-select:focus {
+  background-color: #333;
+  border-color: #b388ff;
+  color: white;
+  box-shadow: 0 0 8px rgba(179, 136, 255, 0.5);
 }
-
-footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer p {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-}
+.form-flex label {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=estilo.css.map */

@@ -2,36 +2,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-}
+    gap: 25px;
+    padding: 20px;
 
-.card-juego {
-    background-color: $color-tarjetas;
-    border: 1px solid $color-principal;
-    padding: 15px;
-    width: 280px;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-    transition: all 0.4s ease; // Transición suave para la pseudoclase
+    .card-juego {
+        background-color: $color-tarjetas;
+        border: 1px solid $color-principal;
+        padding: 20px;
+        width: 280px; // Ancho fijo para las tarjetas
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+        transition: all 0.4s ease;
 
-    &:hover {
-        transform: translateY(-10px) scale(1.02); // Transformación
-        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-        border-color: white;
+        &:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 10px 25px rgba(179, 136, 255, 0.4);
+        }
+
+        img {
+            width: $max-img-width; // Usa la variable
+            height: 250px; // Altura fija para que todas se vean iguales
+            object-fit: cover; // Corta la imagen para que encaje sin deformarse
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            color: $color-principal;
+            margin: 10px 0;
+        }
     }
-
-    img {
-        border-radius: 5px;
-    }
-}
-
-// Animación de entrada para los títulos (Unidad 8)
-@keyframes aparecer {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-entrada {
-    animation: aparecer 1s ease-out;
 }
