@@ -1,133 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a la Galería de Videojuegos de Leonardo. Encuentra los mejores títulos para PS5, preventas exclusivas y ofertas gamers en Perú.">
+    <meta name="keywords" content="videojuegos, tienda gamer, PS5, GTA VI, comprar juegos">
+    <title>Gamer Store | Inicio - Los Mejores Videojuegos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Galeria de Videojuegos</h1>
-        <h2>Inicio</h2>
-        <nav>
-            <ul>
-                <li><a href="#" class="activo">Inicio</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GAMER STORE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/lanzamientos.html">Lanzamientos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section class="oferta">
-            <h2>La mejor tienda de videojuegos</h2>
-            <div class="productos_container">
-                <div class="card_juego">
-                    <span class="etiqueta-badge">NUEVO</span>
-                    <h3>Oferta del dia</h3>
-                    <img src="img/gta-6.png" alt="GTAVI">
-                    <p>Juego Grand theft auto VI online - Preventa</p>
-                    <h4>S/ 300.00</h4>
-                </div>
-
-                <div class="card_juego">
-                    <h3>Oferta del dia</h3>
-                    <img src="img/codmw.png" alt="COD">
-                    <p>Call of duty Modern Warfare</p>
-                    <h4>S/ 150.00</h4>
-                </div>
-
-                <div class="card_juego">
-                    <span class="etiqueta-badge">PROMO</span>
-                    <h3>Oferta del dia</h3>
-                    <img src="img/dbsparking.png" alt="DBS">
-                    <p>Dragon Ball Sparking zero</p>
-                    <h4>S/ 190.00</h4>
-                </div>
-
-                <div class="card_juego">
-                    <h3>Oferta del dia</h3>
-                    <img src="img/expedition-33.png" alt="EXPEd">
-                    <p>Exepdition 33</p>
-                    <h4>S/ 250.00</h4>
-                </div>
+        <section class="py-5 text-center bg-dark text-white animate-entrada">
+            <div class="container">
+                <h1 class="display-4">TU DESTINO GAMER DEFINITIVO</h1>
+                <p class="lead">Explora nuestra colección curada de los títulos más épicos del año.</p>
+                <a href="pages/productos.html" class="btn btn-primary btn-lg mt-3">Ver Catálogo</a>
             </div>
         </section>
 
-        <section class="novedad">
-            <h2>Novedades y preventa</h2>
-            <div class="productos_container">
-                <div class="card_juego">
-                    <h3>Preventa</h3>
-                    <img src="img/gta-6.png" alt="GTAVI">
-                    <p>Juego Grand theft auto VI online - Preventa</p>
-                    <h4>S/ 300.00</h4>
+        <section class="container py-5">
+            <h2 class="text-center mb-4">Destacados de la Semana</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-juego">
+                        <img src="img/tlou2.png" alt="Portada del juego The Last of Us Parte 2" class="img-fluid">
+                        <h3 class="h5 mt-2">The Last of Us Part II</h3>
+                        <p>S/ 129.00</p>
+                    </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card-juego">
+                        <img src="img/gow_ragnarok.png" alt="Portada del juego God of War Ragnarok" class="img-fluid">
+                        <h3 class="h5 mt-2">God of War Ragnarok</h3>
+                        <p>S/ 169.00</p>
+                    </div>
                 </div>
-        </section>
-
-        <section class="ventas">
-            <h2>Más vendidos</h2>
-            <div class="productos_container">
-                <div class="card_juego">
-                    <h3>Juego más vendido</h3>
-                    <img src="img/fifa22.png" alt="fifita">
-                    <p>Fifa 22 - Juego más vendido</p>
-                    <h4>S/ 150 - Oferta</h4>
-                </div>
-            </div>
-        </section>
-
-        <section class="comentario">
-            <h2>Comentario de clientes</h2>
-            <div class="productos_container">
-                <div class="card-comentario">
-                    <h4>Juan Fosaroli</h4>
-                    <p>"Me gustó mucho la pagina"</p>
-                </div>
-                <div class="card-comentario">
-                    <h4>Charles Leclerc</h4>
-                    <p>"El diseño me resulta bonito"</p>
-                </div>
-                <div class="card-comentario">
-                    <h4>Patrick Jimenez</h4>
-                    <p>"Bien interactiva la pagina"</p>
+                <div class="col-md-4">
+                    <div class="card-juego">
+                        <img src="img/gta-6.png" alt="Imagen promocional de Grand Theft Auto VI" class="img-fluid">
+                        <h3 class="h5 mt-2">GTA VI - Reserva</h3>
+                        <p>Próximamente</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer_container">
-            <div>
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Github</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Mi cuenta</h4>
-                <ul>
-                    <li>Crear usuario</li>
-                    <li>Iniciar Sesion</li>
-                    <li>Github</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
+    <footer class="bg-black text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>Copyright © 2025 - Sitio hecho por Leonardo Caramantin</p>
         </div>
-        <p>Copyright © 2025 - Sitio hecho por Leandro Caramantin</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-
-
 </html>

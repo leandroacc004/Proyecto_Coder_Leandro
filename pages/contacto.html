@@ -1,80 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="¿Tienes dudas sobre un juego? Contáctanos. Estamos para ayudarte con tus compras y pedidos especiales.">
+    <title>Contacto | Soporte Gamer Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
-
 <body>
     <header>
-        <h1>Galeria de Videojuegos</h1>
-        <h2>Contacto</h2>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#" class="activo">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">GAMER STORE</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="productos.html">Productos</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="lanzamientos.html">Lanzamientos</a></li>
+                        <li><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="main-contacto">
-        <h2>Completa tus datos</h2>
-        <form class="form-flex">
+        <h1 class="text-center mt-5">Contáctanos</h1>
+        <form class="form-flex mt-4 mx-auto p-4 border border-primary rounded bg-black">
             <fieldset>
-                <legend>Datos de la persona</legend>
-                <label for="name_form">Nombre</label>
-                <input type="text" id="name_form" required>
-                <label for="lastname_fomr">Apellido</label>
-                <input type="text" id="lastname_fomr" required>
-                <label for="dni_fomr">DNI</label>
-                <input type="number" id="dni_fomr" required>
-            </fieldset>
-
-            <fieldset>
-                <legend>Motivo de la consulta</legend>
-                <textarea name="asunto" id="asunto_form" placeholder="Escribe el asunto detalladamente"
-                    required></textarea>
-
-                <div class="checkbox-group">
-                    <label for="mail_form">Enviar correo de confirmación </label>
-                    <input type="checkbox" id="mail_form">
+                <legend class="text-primary-color">Tus Datos</legend>
+                <div class="mb-3">
+                    <label for="name_form" class="form-label">Nombre</label>
+                    <input type="text" id="name_form" class="form-control" placeholder="Ej: Leonardo" required>
                 </div>
-
-                <div class="btn-group">
-                    <input type="submit" value="Enviar" class="btn btn-primary">
-                    <input type="reset" value="Limpiar" class="btn btn-outline-danger">
+                <div class="mb-3">
+                    <label for="mail_input" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="mail_input" class="form-control" placeholder="correo@ejemplo.com" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="text-primary-color">Mensaje</legend>
+                <div class="mb-3">
+                    <textarea id="asunto_form" class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                    <button type="reset" class="btn btn-outline-danger">Limpiar</button>
                 </div>
             </fieldset>
         </form>
     </main>
 
-    <footer>
-        <div class="footer_container">
-            <div>
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Github</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Mi cuenta</h4>
-                <ul>
-                    <li>Crear usuario</li>
-                    <li>Iniciar Sesion</li>
-                    <li>Github</li>
-                    <li>Youtube</li>
-                </ul>
-            </div>
+    <footer class="bg-black text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>Copyright © 2025 - Sitio hecho por Leonardo Caramantin</p>
         </div>
-        <p>Copyright © 2025 - Sitio hecho por Leandro Caramantin</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
